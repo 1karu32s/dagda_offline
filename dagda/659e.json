@@ -1,0 +1,2377 @@
+[
+    {
+        "id": "659e489c4e26c612860a6dff",
+        "image_name": "medicean/vulapps",
+        "static_analysis": {
+            "malware_binaries": [],
+            "os_packages": {
+                "ok_os_packages": 167,
+                "os_packages_details": [
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "adduser",
+                        "version": "3.113+nmu3ubuntu3",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "apt",
+                        "version": "1.0.1ubuntu2.17",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "apt-utils",
+                        "version": "1.0.1ubuntu2.17",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "base-files",
+                        "version": "7.2ubuntu5.5",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "base-passwd",
+                        "version": "3.5.33",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": true,
+                        "product": "bash",
+                        "version": "4.3",
+                        "vulnerabilities": [
+                            {
+                                "CVE-2014-6271": {
+                                    "cveid": "CVE-2014-6271",
+                                    "cvss_access_complexity": "LOW",
+                                    "cvss_access_vector": "NETWORK",
+                                    "cvss_authentication": "NONE",
+                                    "cvss_availability_impact": "COMPLETE",
+                                    "cvss_base": 10.0,
+                                    "cvss_confidentiality_impact": "COMPLETE",
+                                    "cvss_exploit": 10.0,
+                                    "cvss_impact": 10.0,
+                                    "cvss_integrity_impact": "COMPLETE",
+                                    "cvss_vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                                    "cweid": "CWE-78",
+                                    "mod_date": "17-11-2021",
+                                    "pub_date": "24-09-2014",
+                                    "summary": "GNU Bash through 4.3 processes trailing strings after function definitions in the values of environment variables, which allows remote attackers to execute arbitrary code via a crafted environment, as demonstrated by vectors involving the ForceCommand feature in OpenSSH sshd, the mod_cgi and mod_cgid modules in the Apache HTTP Server, scripts executed by unspecified DHCP clients, and other situations in which setting the environment occurs across a privilege boundary from Bash execution, aka \"ShellShock.\"  NOTE: the original fix for this issue was incorrect; CVE-2014-7169 has been assigned to cover the vulnerability that is still present after the incorrect fix."
+                                }
+                            },
+                            {
+                                "CVE-2014-6277": {
+                                    "cveid": "CVE-2014-6277",
+                                    "cvss_access_complexity": "LOW",
+                                    "cvss_access_vector": "NETWORK",
+                                    "cvss_authentication": "NONE",
+                                    "cvss_availability_impact": "COMPLETE",
+                                    "cvss_base": 10.0,
+                                    "cvss_confidentiality_impact": "COMPLETE",
+                                    "cvss_exploit": 10.0,
+                                    "cvss_impact": 10.0,
+                                    "cvss_integrity_impact": "COMPLETE",
+                                    "cvss_vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                                    "cweid": "CWE-78",
+                                    "mod_date": "09-08-2018",
+                                    "pub_date": "27-09-2014",
+                                    "summary": "GNU Bash through 4.3 bash43-026 does not properly parse function definitions in the values of environment variables, which allows remote attackers to execute arbitrary code or cause a denial of service (uninitialized memory access, and untrusted-pointer read and write operations) via a crafted environment, as demonstrated by vectors involving the ForceCommand feature in OpenSSH sshd, the mod_cgi and mod_cgid modules in the Apache HTTP Server, scripts executed by unspecified DHCP clients, and other situations in which setting the environment occurs across a privilege boundary from Bash execution.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2014-6271 and CVE-2014-7169."
+                                }
+                            },
+                            {
+                                "CVE-2014-6278": {
+                                    "cveid": "CVE-2014-6278",
+                                    "cvss_access_complexity": "LOW",
+                                    "cvss_access_vector": "NETWORK",
+                                    "cvss_authentication": "NONE",
+                                    "cvss_availability_impact": "COMPLETE",
+                                    "cvss_base": 10.0,
+                                    "cvss_confidentiality_impact": "COMPLETE",
+                                    "cvss_exploit": 10.0,
+                                    "cvss_impact": 10.0,
+                                    "cvss_integrity_impact": "COMPLETE",
+                                    "cvss_vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                                    "cweid": "CWE-78",
+                                    "mod_date": "17-11-2021",
+                                    "pub_date": "30-09-2014",
+                                    "summary": "GNU Bash through 4.3 bash43-026 does not properly parse function definitions in the values of environment variables, which allows remote attackers to execute arbitrary commands via a crafted environment, as demonstrated by vectors involving the ForceCommand feature in OpenSSH sshd, the mod_cgi and mod_cgid modules in the Apache HTTP Server, scripts executed by unspecified DHCP clients, and other situations in which setting the environment occurs across a privilege boundary from Bash execution.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2014-6271, CVE-2014-7169, and CVE-2014-6277."
+                                }
+                            },
+                            {
+                                "CVE-2014-7169": {
+                                    "cveid": "CVE-2014-7169",
+                                    "cvss_access_complexity": "LOW",
+                                    "cvss_access_vector": "NETWORK",
+                                    "cvss_authentication": "NONE",
+                                    "cvss_availability_impact": "COMPLETE",
+                                    "cvss_base": 10.0,
+                                    "cvss_confidentiality_impact": "COMPLETE",
+                                    "cvss_exploit": 10.0,
+                                    "cvss_impact": 10.0,
+                                    "cvss_integrity_impact": "COMPLETE",
+                                    "cvss_vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                                    "cweid": "CWE-78",
+                                    "mod_date": "17-11-2021",
+                                    "pub_date": "25-09-2014",
+                                    "summary": "GNU Bash through 4.3 bash43-025 processes trailing strings after certain malformed function definitions in the values of environment variables, which allows remote attackers to write to files or possibly have unknown other impact via a crafted environment, as demonstrated by vectors involving the ForceCommand feature in OpenSSH sshd, the mod_cgi and mod_cgid modules in the Apache HTTP Server, scripts executed by unspecified DHCP clients, and other situations in which setting the environment occurs across a privilege boundary from Bash execution.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2014-6271."
+                                }
+                            },
+                            {
+                                "CVE-2014-7186": {
+                                    "cveid": "CVE-2014-7186",
+                                    "cvss_access_complexity": "LOW",
+                                    "cvss_access_vector": "NETWORK",
+                                    "cvss_authentication": "NONE",
+                                    "cvss_availability_impact": "COMPLETE",
+                                    "cvss_base": 10.0,
+                                    "cvss_confidentiality_impact": "COMPLETE",
+                                    "cvss_exploit": 10.0,
+                                    "cvss_impact": 10.0,
+                                    "cvss_integrity_impact": "COMPLETE",
+                                    "cvss_vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                                    "cweid": "CWE-119",
+                                    "mod_date": "09-10-2018",
+                                    "pub_date": "28-09-2014",
+                                    "summary": "The redirection implementation in parse.y in GNU Bash through 4.3 bash43-026 allows remote attackers to cause a denial of service (out-of-bounds array access and application crash) or possibly have unspecified other impact via crafted use of here documents, aka the \"redir_stack\" issue."
+                                }
+                            },
+                            {
+                                "CVE-2014-7187": {
+                                    "cveid": "CVE-2014-7187",
+                                    "cvss_access_complexity": "LOW",
+                                    "cvss_access_vector": "NETWORK",
+                                    "cvss_authentication": "NONE",
+                                    "cvss_availability_impact": "COMPLETE",
+                                    "cvss_base": 10.0,
+                                    "cvss_confidentiality_impact": "COMPLETE",
+                                    "cvss_exploit": 10.0,
+                                    "cvss_impact": 10.0,
+                                    "cvss_integrity_impact": "COMPLETE",
+                                    "cvss_vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                                    "cweid": "CWE-119",
+                                    "mod_date": "09-10-2018",
+                                    "pub_date": "28-09-2014",
+                                    "summary": "Off-by-one error in the read_token_word function in parse.y in GNU Bash through 4.3 bash43-026 allows remote attackers to cause a denial of service (out-of-bounds array access and application crash) or possibly have unspecified other impact via deeply nested for loops, aka the \"word_lineno\" issue."
+                                }
+                            },
+                            {
+                                "CVE-2016-0634": {
+                                    "cveid": "CVE-2016-0634",
+                                    "cvss_access_complexity": "MEDIUM",
+                                    "cvss_access_vector": "NETWORK",
+                                    "cvss_authentication": "SINGLE",
+                                    "cvss_availability_impact": "PARTIAL",
+                                    "cvss_base": 6.0,
+                                    "cvss_confidentiality_impact": "PARTIAL",
+                                    "cvss_exploit": 6.8,
+                                    "cvss_impact": 6.4,
+                                    "cvss_integrity_impact": "PARTIAL",
+                                    "cvss_vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+                                    "cweid": "CWE-78",
+                                    "mod_date": "05-01-2018",
+                                    "pub_date": "28-08-2017",
+                                    "summary": "The expansion of '\\h' in the prompt string in bash 4.3 allows remote authenticated users to execute arbitrary code via shell metacharacters placed in 'hostname' of a machine."
+                                }
+                            },
+                            {
+                                "BID-92337": {
+                                    "bugtraq_id": 92337,
+                                    "class": "Design Error",
+                                    "cve": [],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "GNU Bash Out-Of-Bounds Read Information Disclosure Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-92999": {
+                                    "bugtraq_id": 92999,
+                                    "class": "Unknown",
+                                    "cve": [
+                                        "CVE-2016-0634"
+                                    ],
+                                    "local": "yes",
+                                    "remote": "no",
+                                    "title": "GNU Bash CVE-2016-0634 Local Code Execution Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-93183": {
+                                    "bugtraq_id": 93183,
+                                    "class": "Design Error",
+                                    "cve": [
+                                        "CVE-2016-7543"
+                                    ],
+                                    "local": "yes",
+                                    "remote": "no",
+                                    "title": "GNU Bash CVE-2016-7543 Local Command Execution Vulnerability"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "bsdutils",
+                        "version": "2.20.1",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "busybox-initramfs",
+                        "version": "1.21.0",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": true,
+                        "product": "bzip2",
+                        "version": "1.0.6",
+                        "vulnerabilities": [
+                            {
+                                "CVE-2016-3189": {
+                                    "cveid": "CVE-2016-3189",
+                                    "cvss_access_complexity": "MEDIUM",
+                                    "cvss_access_vector": "NETWORK",
+                                    "cvss_authentication": "NONE",
+                                    "cvss_availability_impact": "PARTIAL",
+                                    "cvss_base": 4.3,
+                                    "cvss_confidentiality_impact": "NONE",
+                                    "cvss_exploit": 8.6,
+                                    "cvss_impact": 2.9,
+                                    "cvss_integrity_impact": "NONE",
+                                    "cvss_vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+                                    "cweid": "NVD-CWE-Other",
+                                    "mod_date": "07-11-2023",
+                                    "pub_date": "30-06-2016",
+                                    "summary": "Use-after-free vulnerability in bzip2recover in bzip2 1.0.6 allows remote attackers to cause a denial of service (crash) via a crafted bzip2 file, related to block ends set to before the start of the block."
+                                }
+                            },
+                            {
+                                "BID-91297": {
+                                    "bugtraq_id": 91297,
+                                    "class": "Design Error",
+                                    "cve": [
+                                        "CVE-2016-3189"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "bzip2 '/bzip2recover.c' Denial of Service Vulnerability"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "console-setup",
+                        "version": "1.70ubuntu8",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "coreutils",
+                        "version": "8.21",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "cpio",
+                        "version": "2.11+dfsg",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "cron",
+                        "version": "3.0pl1",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "dash",
+                        "version": "0.5.7",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "debconf",
+                        "version": "1.5.51ubuntu2",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "debconf-i18n",
+                        "version": "1.5.51ubuntu2",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "debianutils",
+                        "version": "4.4",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "dh-python",
+                        "version": "1.20140128",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "diffutils",
+                        "version": "3.3",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "dmsetup",
+                        "version": "1.02.77",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "dpkg",
+                        "version": "1.17.5ubuntu5.7",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "e2fslibs",
+                        "version": "1.42.9",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "e2fsprogs",
+                        "version": "1.42.9",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "eject",
+                        "version": "2.1.5+deb1+cvs20081104",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": true,
+                        "product": "file",
+                        "version": "5.14",
+                        "vulnerabilities": [
+                            {
+                                "CVE-2014-3478": {
+                                    "cveid": "CVE-2014-3478",
+                                    "cvss_access_complexity": "LOW",
+                                    "cvss_access_vector": "NETWORK",
+                                    "cvss_authentication": "NONE",
+                                    "cvss_availability_impact": "PARTIAL",
+                                    "cvss_base": 5.0,
+                                    "cvss_confidentiality_impact": "NONE",
+                                    "cvss_exploit": 10.0,
+                                    "cvss_impact": 2.9,
+                                    "cvss_integrity_impact": "NONE",
+                                    "cvss_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+                                    "cweid": "CWE-119",
+                                    "mod_date": "28-11-2016",
+                                    "pub_date": "09-07-2014",
+                                    "summary": "Buffer overflow in the mconvert function in softmagic.c in file before 5.19, as used in the Fileinfo component in PHP before 5.4.30 and 5.5.x before 5.5.14, allows remote attackers to cause a denial of service (application crash) via a crafted Pascal string in a FILE_PSTRING conversion."
+                                }
+                            },
+                            {
+                                "CVE-2014-3538": {
+                                    "cveid": "CVE-2014-3538",
+                                    "cvss_access_complexity": "LOW",
+                                    "cvss_access_vector": "NETWORK",
+                                    "cvss_authentication": "NONE",
+                                    "cvss_availability_impact": "PARTIAL",
+                                    "cvss_base": 5.0,
+                                    "cvss_confidentiality_impact": "NONE",
+                                    "cvss_exploit": 10.0,
+                                    "cvss_impact": 2.9,
+                                    "cvss_integrity_impact": "NONE",
+                                    "cvss_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+                                    "cweid": "CWE-399",
+                                    "mod_date": "19-01-2023",
+                                    "pub_date": "03-07-2014",
+                                    "summary": "file before 5.19 does not properly restrict the amount of data read during a regex search, which allows remote attackers to cause a denial of service (CPU consumption) via a crafted file that triggers backtracking during processing of an awk rule.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2013-7345."
+                                }
+                            },
+                            {
+                                "CVE-2014-3587": {
+                                    "cveid": "CVE-2014-3587",
+                                    "cvss_access_complexity": "MEDIUM",
+                                    "cvss_access_vector": "NETWORK",
+                                    "cvss_authentication": "NONE",
+                                    "cvss_availability_impact": "PARTIAL",
+                                    "cvss_base": 4.3,
+                                    "cvss_confidentiality_impact": "NONE",
+                                    "cvss_exploit": 8.6,
+                                    "cvss_impact": 2.9,
+                                    "cvss_integrity_impact": "NONE",
+                                    "cvss_vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+                                    "cweid": "CWE-189",
+                                    "mod_date": "05-01-2018",
+                                    "pub_date": "23-08-2014",
+                                    "summary": "Integer overflow in the cdf_read_property_info function in cdf.c in file through 5.19, as used in the Fileinfo component in PHP before 5.4.32 and 5.5.x before 5.5.16, allows remote attackers to cause a denial of service (application crash) via a crafted CDF file.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2012-1571."
+                                }
+                            },
+                            {
+                                "CVE-2014-9620": {
+                                    "cveid": "CVE-2014-9620",
+                                    "cvss_access_complexity": "LOW",
+                                    "cvss_access_vector": "NETWORK",
+                                    "cvss_authentication": "NONE",
+                                    "cvss_availability_impact": "PARTIAL",
+                                    "cvss_base": 5.0,
+                                    "cvss_confidentiality_impact": "NONE",
+                                    "cvss_exploit": 10.0,
+                                    "cvss_impact": 2.9,
+                                    "cvss_integrity_impact": "NONE",
+                                    "cvss_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+                                    "cweid": "CWE-399",
+                                    "mod_date": "16-06-2018",
+                                    "pub_date": "21-01-2015",
+                                    "summary": "The ELF parser in file 5.08 through 5.21 allows remote attackers to cause a denial of service via a large number of notes."
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "findutils",
+                        "version": "4.4.2",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "gcc-4.8-base",
+                        "version": "4.8.4",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "gcc-4.9-base",
+                        "version": "4.9.3",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": true,
+                        "product": "gnupg",
+                        "version": "1.4.16",
+                        "vulnerabilities": [
+                            {
+                                "BID-68156": {
+                                    "bugtraq_id": 68156,
+                                    "class": "Failure to Handle Exceptional Conditions",
+                                    "cve": [
+                                        "CVE-2014-4617"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "GnuPG 'compress.c' Denial of Service Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-73064": {
+                                    "bugtraq_id": 73064,
+                                    "class": "Design Error",
+                                    "cve": [
+                                        "CVE-2015-0837"
+                                    ],
+                                    "local": "yes",
+                                    "remote": "no",
+                                    "title": "Libgcrypt CVE-2015-0837 Local Information Disclosure Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-73066": {
+                                    "bugtraq_id": 73066,
+                                    "class": "Design Error",
+                                    "cve": [
+                                        "CVE-2014-3591"
+                                    ],
+                                    "local": "yes",
+                                    "remote": "no",
+                                    "title": "libgcrypt Elgamal Decryption 'cipher/elgamal.c' Information Disclosure Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-92527": {
+                                    "bugtraq_id": 92527,
+                                    "class": "Design Error",
+                                    "cve": [
+                                        "CVE-2016-6313"
+                                    ],
+                                    "local": "yes",
+                                    "remote": "no",
+                                    "title": "GnuPG and Libgcrypt CVE-2016-6313 Local Predictable Random Number Generator Weakness"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "gpgv",
+                        "version": "1.4.16",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "grep",
+                        "version": "2.16",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "gzip",
+                        "version": "1.6",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "hostname",
+                        "version": "3.15ubuntu1",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "ifupdown",
+                        "version": "0.7.47.2ubuntu4.4",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "init-system-helpers",
+                        "version": "1.14ubuntu1",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "initramfs-tools",
+                        "version": "0.103ubuntu4.7",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "initramfs-tools-bin",
+                        "version": "0.103ubuntu4.7",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "initscripts",
+                        "version": "2.88dsf",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "insserv",
+                        "version": "1.14.0",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "iproute2",
+                        "version": "3.12.0",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "iputils-ping",
+                        "version": "20121221",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": true,
+                        "product": "isc-dhcp-client",
+                        "version": "4.2.4",
+                        "vulnerabilities": [
+                            {
+                                "BID-54665": {
+                                    "bugtraq_id": 54665,
+                                    "class": "Unknown",
+                                    "cve": [
+                                        "CVE-2012-3571"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "ISC DHCP Multiple Denial of Service Vulnerabilities"
+                                }
+                            },
+                            {
+                                "BID-55530": {
+                                    "bugtraq_id": 55530,
+                                    "class": "Unknown",
+                                    "cve": [
+                                        "CVE-2012-3955"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "ISC DHCP IPv6 Lease Expiration Handling Denial of Service Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-84208": {
+                                    "bugtraq_id": 84208,
+                                    "class": "Failure to Handle Exceptional Conditions",
+                                    "cve": [
+                                        "CVE-2016-2774"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "ISC DHCP CVE-2016-2774 Remote Denial of Service Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-102726": {
+                                    "bugtraq_id": 102726,
+                                    "class": "Failure to Handle Exceptional Conditions",
+                                    "cve": [
+                                        "CVE-2017-3144"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "ISC DHCP CVE-2017-3144 Remote Denial of Service Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-103187": {
+                                    "bugtraq_id": 103187,
+                                    "class": "Boundary Condition Error",
+                                    "cve": [
+                                        "CVE-2018-5732"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "ISC DHCP CVE-2018-5732 Remote Buffer Overflow Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-103188": {
+                                    "bugtraq_id": 103188,
+                                    "class": "Boundary Condition Error",
+                                    "cve": [
+                                        "CVE-2018-5733"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "ISC DHCP CVE-2018-5733 Remote Denial of Service Vulnerability"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": true,
+                        "product": "isc-dhcp-common",
+                        "version": "4.2.4",
+                        "vulnerabilities": [
+                            {
+                                "BID-54665": {
+                                    "bugtraq_id": 54665,
+                                    "class": "Unknown",
+                                    "cve": [
+                                        "CVE-2012-3571"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "ISC DHCP Multiple Denial of Service Vulnerabilities"
+                                }
+                            },
+                            {
+                                "BID-55530": {
+                                    "bugtraq_id": 55530,
+                                    "class": "Unknown",
+                                    "cve": [
+                                        "CVE-2012-3955"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "ISC DHCP IPv6 Lease Expiration Handling Denial of Service Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-84208": {
+                                    "bugtraq_id": 84208,
+                                    "class": "Failure to Handle Exceptional Conditions",
+                                    "cve": [
+                                        "CVE-2016-2774"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "ISC DHCP CVE-2016-2774 Remote Denial of Service Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-102726": {
+                                    "bugtraq_id": 102726,
+                                    "class": "Failure to Handle Exceptional Conditions",
+                                    "cve": [
+                                        "CVE-2017-3144"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "ISC DHCP CVE-2017-3144 Remote Denial of Service Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-103187": {
+                                    "bugtraq_id": 103187,
+                                    "class": "Boundary Condition Error",
+                                    "cve": [
+                                        "CVE-2018-5732"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "ISC DHCP CVE-2018-5732 Remote Buffer Overflow Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-103188": {
+                                    "bugtraq_id": 103188,
+                                    "class": "Boundary Condition Error",
+                                    "cve": [
+                                        "CVE-2018-5733"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "ISC DHCP CVE-2018-5733 Remote Denial of Service Vulnerability"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "kbd",
+                        "version": "1.15.5",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "keyboard-configuration",
+                        "version": "1.70ubuntu8",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "klibc-utils",
+                        "version": "2.0.3",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "kmod",
+                        "version": "15",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "less",
+                        "version": "458",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libacl1",
+                        "version": "2.2.52",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libapt-inst1.5",
+                        "version": "1.0.1ubuntu2.17",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libapt-pkg4.12",
+                        "version": "1.0.1ubuntu2.17",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": true,
+                        "product": "libarchive-extract-perl",
+                        "version": "0.70",
+                        "vulnerabilities": [
+                            {
+                                "BID-70142": {
+                                    "bugtraq_id": 70142,
+                                    "class": "Failure to Handle Exceptional Conditions",
+                                    "cve": [
+                                        "CVE-2014-4330"
+                                    ],
+                                    "local": "yes",
+                                    "remote": "no",
+                                    "title": "Perl CVE-2014-4330 Stack Overflow Denial of Service Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-71819": {
+                                    "bugtraq_id": 71819,
+                                    "class": "Boundary Condition Error",
+                                    "cve": [],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "Perl a2p '/usr/bin/a2p' Buffer Overflow Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-92136": {
+                                    "bugtraq_id": 92136,
+                                    "class": "Unknown",
+                                    "cve": [
+                                        "CVE-2016-1238"
+                                    ],
+                                    "local": "yes",
+                                    "remote": "no",
+                                    "title": "Perl CVE-2016-1238 Local Privilege Escalation Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-101051": {
+                                    "bugtraq_id": 101051,
+                                    "class": "Boundary Condition Error",
+                                    "cve": [
+                                        "CVE-2017-12814"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "Perl CVE-2017-12814 Stack Based Buffer Overflow Vulnerability"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libattr1",
+                        "version": "2.4.47",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libaudit-common",
+                        "version": "2.3.2",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libaudit1",
+                        "version": "2.3.2",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libblkid1",
+                        "version": "2.20.1",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libbsd0",
+                        "version": "0.6.0",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libbz2-1.0",
+                        "version": "1.0.6",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libc-bin",
+                        "version": "2.19",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libc6",
+                        "version": "2.19",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libcap2",
+                        "version": "2.24",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libcap2-bin",
+                        "version": "2.24",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libcgmanager0",
+                        "version": "0.24",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libcomerr2",
+                        "version": "1.42.9",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libdb5.3",
+                        "version": "5.3.28",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libdbus-1-3",
+                        "version": "1.6.18",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libdebconfclient0",
+                        "version": "0.187ubuntu1",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libdevmapper1.02.1",
+                        "version": "1.02.77",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libdrm2",
+                        "version": "2.4.67",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libestr0",
+                        "version": "0.1.9",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libexpat1",
+                        "version": "2.1.0",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libffi6",
+                        "version": "3.1~rc1+r3.0.13",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libfribidi0",
+                        "version": "0.19.6",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libgcc1",
+                        "version": "4.9.3",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libgcrypt11",
+                        "version": "1.5.3",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libgdbm3",
+                        "version": "1.8.3",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libgnutls-openssl27",
+                        "version": "2.12.23",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libgnutls26",
+                        "version": "2.12.23",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libgpg-error0",
+                        "version": "1.12",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libjson-c2",
+                        "version": "0.11",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libjson0",
+                        "version": "0.11",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libklibc",
+                        "version": "2.0.3",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libkmod2",
+                        "version": "15",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "liblocale-gettext-perl",
+                        "version": "1.05",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "liblockfile-bin",
+                        "version": "1.09",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "liblockfile1",
+                        "version": "1.09",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": true,
+                        "product": "liblog-message-simple-perl",
+                        "version": "0.10",
+                        "vulnerabilities": [
+                            {
+                                "BID-14709": {
+                                    "bugtraq_id": 14709,
+                                    "class": "Input Validation Error",
+                                    "cve": [],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "CMS Made Simple Lang.PHP Remote File Include Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-14937": {
+                                    "bugtraq_id": 14937,
+                                    "class": "Input Validation Error",
+                                    "cve": [],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "CMS Made Simple Index.PHP Cross-Site Scripting Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-27074": {
+                                    "bugtraq_id": 27074,
+                                    "class": "Input Validation Error",
+                                    "cve": [
+                                        "CVE-2007-6656"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "CMS Made Simple TinyMCE Module 'content_css.php' SQL Injection Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-39997": {
+                                    "bugtraq_id": 39997,
+                                    "class": "Input Validation Error",
+                                    "cve": [
+                                        "CVE-2010-1482"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "CMS Made Simple 'admin/editprefs.php' Cross-Site Scripting Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-50659": {
+                                    "bugtraq_id": 50659,
+                                    "class": "Input Validation Error",
+                                    "cve": [],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "CMS Made Simple Remote Database Corruption Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-71653": {
+                                    "bugtraq_id": 71653,
+                                    "class": "Input Validation Error",
+                                    "cve": [],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "CMS Made Simple Unspecified PHP Code Injection Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-73523": {
+                                    "bugtraq_id": 73523,
+                                    "class": "Input Validation Error",
+                                    "cve": [
+                                        "CVE-2010-3882"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "CMS Made Simple CVE-2010-3882 Cross-Site Scripting Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-90907": {
+                                    "bugtraq_id": 90907,
+                                    "class": "Input Validation Error",
+                                    "cve": [
+                                        "CVE-2016-2784"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "CMS Made Simple CVE-2016-2784 HTTP Header Injection Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-95453": {
+                                    "bugtraq_id": 95453,
+                                    "class": "Input Validation Error",
+                                    "cve": [
+                                        "CVE-2016-7904"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "CMS Made Simple CVE-2016-7904 Cross Site Request Forgery Vulnerability"
+                                }
+                            },
+                            {
+                                "EXPLOIT_DB_ID-26217": {
+                                    "description": "CMS Made Simple 0.10 - 'Lang.php' Remote File Inclusion",
+                                    "exploit_db_id": 26217,
+                                    "platform": "php",
+                                    "port": 0,
+                                    "type": "webapps"
+                                }
+                            },
+                            {
+                                "EXPLOIT_DB_ID-26298": {
+                                    "description": "CMS Made Simple 0.10 - 'index.php' Cross-Site Scripting",
+                                    "exploit_db_id": 26298,
+                                    "platform": "php",
+                                    "port": 0,
+                                    "type": "webapps"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "liblzma5",
+                        "version": "5.1.1alpha+20120614",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libmagic1",
+                        "version": "5.14",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libmodule-pluggable-perl",
+                        "version": "5.1",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libmount1",
+                        "version": "2.20.1",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libmpdec2",
+                        "version": "2.4.0",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libncurses5",
+                        "version": "5.9+20140118",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libncursesw5",
+                        "version": "5.9+20140118",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libnewt0.52",
+                        "version": "0.52.15",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libnih-dbus1",
+                        "version": "1.0.3",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libnih1",
+                        "version": "1.0.3",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libp11-kit0",
+                        "version": "0.20.2",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libpam-cap",
+                        "version": "2.24",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libpam-modules",
+                        "version": "1.1.8",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libpam-modules-bin",
+                        "version": "1.1.8",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libpam-runtime",
+                        "version": "1.1.8",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libpam0g",
+                        "version": "1.1.8",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libpcre3",
+                        "version": "8.31",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libplymouth2",
+                        "version": "0.8.8",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libpng12-0",
+                        "version": "1.2.50",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": true,
+                        "product": "libpod-latex-perl",
+                        "version": "0.61",
+                        "vulnerabilities": [
+                            {
+                                "BID-70142": {
+                                    "bugtraq_id": 70142,
+                                    "class": "Failure to Handle Exceptional Conditions",
+                                    "cve": [
+                                        "CVE-2014-4330"
+                                    ],
+                                    "local": "yes",
+                                    "remote": "no",
+                                    "title": "Perl CVE-2014-4330 Stack Overflow Denial of Service Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-71819": {
+                                    "bugtraq_id": 71819,
+                                    "class": "Boundary Condition Error",
+                                    "cve": [],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "Perl a2p '/usr/bin/a2p' Buffer Overflow Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-92136": {
+                                    "bugtraq_id": 92136,
+                                    "class": "Unknown",
+                                    "cve": [
+                                        "CVE-2016-1238"
+                                    ],
+                                    "local": "yes",
+                                    "remote": "no",
+                                    "title": "Perl CVE-2016-1238 Local Privilege Escalation Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-101051": {
+                                    "bugtraq_id": 101051,
+                                    "class": "Boundary Condition Error",
+                                    "cve": [
+                                        "CVE-2017-12814"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "Perl CVE-2017-12814 Stack Based Buffer Overflow Vulnerability"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libpopt0",
+                        "version": "1.16",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libprocps3",
+                        "version": "3.3.9",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libpython3-stdlib",
+                        "version": "3.4.0",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libpython3.4-minimal",
+                        "version": "3.4.3",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libpython3.4-stdlib",
+                        "version": "3.4.3",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libreadline6",
+                        "version": "6.3",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libselinux1",
+                        "version": "2.2.2",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": true,
+                        "product": "libsemanage-common",
+                        "version": "2.2",
+                        "vulnerabilities": [
+                            {
+                                "BID-8732": {
+                                    "bugtraq_id": 8732,
+                                    "class": "Unknown",
+                                    "cve": [
+                                        "CVE-2003-0543"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "OpenSSL ASN.1 Parsing Vulnerabilities"
+                                }
+                            },
+                            {
+                                "BID-9899": {
+                                    "bugtraq_id": 9899,
+                                    "class": "Unknown",
+                                    "cve": [
+                                        "CVE-2004-0079"
+                                    ],
+                                    "local": "yes",
+                                    "remote": "yes",
+                                    "title": "OpenSSL Denial of Service Vulnerabilities"
+                                }
+                            },
+                            {
+                                "BID-11277": {
+                                    "bugtraq_id": 11277,
+                                    "class": "Design Error",
+                                    "cve": [],
+                                    "local": "yes",
+                                    "remote": "no",
+                                    "title": "Computer Associates Unicenter Common Services Plaintext Password Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-13676": {
+                                    "bugtraq_id": 13676,
+                                    "class": "Design Error",
+                                    "cve": [
+                                        "CVE-2005-0356"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "Multiple Vendor TCP Timestamp PAWS Remote Denial Of Service Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-15025": {
+                                    "bugtraq_id": 15025,
+                                    "class": "Boundary Condition Error",
+                                    "cve": [
+                                        "CVE-2005-3190"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "Computer Associates Multiple Product HTTP Request Remote Buffer Overflow Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-15071": {
+                                    "bugtraq_id": 15071,
+                                    "class": "Design Error",
+                                    "cve": [
+                                        "CVE-2005-2969"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "OpenSSL Insecure Protocol Negotiation Weakness"
+                                }
+                            },
+                            {
+                                "BID-19849": {
+                                    "bugtraq_id": 19849,
+                                    "class": "Design Error",
+                                    "cve": [
+                                        "CVE-2006-4339"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "OpenSSL PKCS Padding RSA Signature Forgery Vulnerability "
+                                }
+                            },
+                            {
+                                "BID-20247": {
+                                    "bugtraq_id": 20247,
+                                    "class": "Failure to Handle Exceptional Conditions",
+                                    "cve": [
+                                        "CVE-2006-2940"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "OpenSSL Public Key Processing Denial of Service Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-20248": {
+                                    "bugtraq_id": 20248,
+                                    "class": "Failure to Handle Exceptional Conditions",
+                                    "cve": [
+                                        "CVE-2006-2937"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "OpenSSL ASN.1 Structures Denial of Service Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-20249": {
+                                    "bugtraq_id": 20249,
+                                    "class": "Boundary Condition Error",
+                                    "cve": [
+                                        "CVE-2006-3738"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "OpenSSL SSL_Get_Shared_Ciphers Buffer Overflow Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-22982": {
+                                    "bugtraq_id": 22982,
+                                    "class": "Input Validation Error",
+                                    "cve": [
+                                        "CVE-2007-1467"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "Multiple Cisco Products Online Help Cross Site Scripting Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-24330": {
+                                    "bugtraq_id": 24330,
+                                    "class": "Boundary Condition Error",
+                                    "cve": [
+                                        "CVE-2007-2864"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "Computer Associates Multiple Products Remote Stack Buffer Overflow Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-24331": {
+                                    "bugtraq_id": 24331,
+                                    "class": "Boundary Condition Error",
+                                    "cve": [
+                                        "CVE-2007-2863"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "Computer Associates Anti-Virus Engine Malformed CAB Filename Buffer Overflow Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-35040": {
+                                    "bugtraq_id": 35040,
+                                    "class": "Input Validation Error",
+                                    "cve": [
+                                        "CVE-2009-1161"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "CiscoWorks Common Services TFTP Server Directory Traversal Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-36935": {
+                                    "bugtraq_id": 36935,
+                                    "class": "Design Error",
+                                    "cve": [
+                                        "CVE-2009-3555"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "Multiple Vendor TLS Protocol Session Renegotiation Security Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-47905": {
+                                    "bugtraq_id": 47905,
+                                    "class": "Input Validation Error",
+                                    "cve": [
+                                        "CVE-2011-0966"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "CiscoWorks Common Services Auditing Directory Traversal Vulnerability"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libsemanage1",
+                        "version": "2.2",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libsepol1",
+                        "version": "2.2",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libslang2",
+                        "version": "2.2.4",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libsqlite3-0",
+                        "version": "3.8.2",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libss2",
+                        "version": "1.42.9",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libssl1.0.0",
+                        "version": "1.0.1f",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libstdc++6",
+                        "version": "4.8.4",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libtasn1-6",
+                        "version": "3.4",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libterm-ui-perl",
+                        "version": "0.42",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libtext-charwidth-perl",
+                        "version": "0.04",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": true,
+                        "product": "libtext-iconv-perl",
+                        "version": "1.7",
+                        "vulnerabilities": [
+                            {
+                                "BID-6398": {
+                                    "bugtraq_id": 6398,
+                                    "class": "Input Validation Error",
+                                    "cve": [],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "Multiple Vendor XML Parser Denial Of Service Vulnerability"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libtext-soundex-perl",
+                        "version": "3.4",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libtext-wrapi18n-perl",
+                        "version": "0.06",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libtinfo5",
+                        "version": "5.9+20140118",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libudev1",
+                        "version": "204",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libusb-0.1-4",
+                        "version": "0.1.12",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libustr-1.0-1",
+                        "version": "1.0.4",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "libuuid1",
+                        "version": "2.20.1",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "locales",
+                        "version": "2.13+git20120306",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "lockfile-progs",
+                        "version": "0.1.17",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "login",
+                        "version": "4.1.5.1",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "logrotate",
+                        "version": "3.8.7",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "lsb-base",
+                        "version": "4.1+Debian11ubuntu6.2",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "lsb-release",
+                        "version": "4.1+Debian11ubuntu6.2",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "makedev",
+                        "version": "2.3.1",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": true,
+                        "product": "mawk",
+                        "version": "1.3.3",
+                        "vulnerabilities": [
+                            {
+                                "EXPLOIT_DB_ID-42357": {
+                                    "description": "MAWK 1.3.3-17 - Local Buffer Overflow",
+                                    "exploit_db_id": 42357,
+                                    "platform": "linux",
+                                    "port": 0,
+                                    "type": "local"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "mime-support",
+                        "version": "3.54ubuntu1.1",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "module-init-tools",
+                        "version": "15",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "mount",
+                        "version": "2.20.1",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "mountall",
+                        "version": "2.53",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "multiarch-support",
+                        "version": "2.19",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "ncurses-base",
+                        "version": "5.9+20140118",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "ncurses-bin",
+                        "version": "5.9+20140118",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "net-tools",
+                        "version": "1.60",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "netbase",
+                        "version": "5.2",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "netcat-openbsd",
+                        "version": "1.105",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "ntpdate",
+                        "version": "4.2.6.p5+dfsg",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "passwd",
+                        "version": "4.1.5.1",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": true,
+                        "product": "perl",
+                        "version": "5.18.2",
+                        "vulnerabilities": [
+                            {
+                                "CVE-2016-1238": {
+                                    "cveid": "CVE-2016-1238",
+                                    "cvss_access_complexity": "LOW",
+                                    "cvss_access_vector": "LOCAL",
+                                    "cvss_authentication": "NONE",
+                                    "cvss_availability_impact": "COMPLETE",
+                                    "cvss_base": 7.2,
+                                    "cvss_confidentiality_impact": "COMPLETE",
+                                    "cvss_exploit": 3.9,
+                                    "cvss_impact": 10.0,
+                                    "cvss_integrity_impact": "COMPLETE",
+                                    "cvss_vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C",
+                                    "cweid": "CWE-264",
+                                    "mod_date": "07-11-2023",
+                                    "pub_date": "02-08-2016",
+                                    "summary": "(1) cpan/Archive-Tar/bin/ptar, (2) cpan/Archive-Tar/bin/ptardiff, (3) cpan/Archive-Tar/bin/ptargrep, (4) cpan/CPAN/scripts/cpan, (5) cpan/Digest-SHA/shasum, (6) cpan/Encode/bin/enc2xs, (7) cpan/Encode/bin/encguess, (8) cpan/Encode/bin/piconv, (9) cpan/Encode/bin/ucmlint, (10) cpan/Encode/bin/unidump, (11) cpan/ExtUtils-MakeMaker/bin/instmodsh, (12) cpan/IO-Compress/bin/zipdetails, (13) cpan/JSON-PP/bin/json_pp, (14) cpan/Test-Harness/bin/prove, (15) dist/ExtUtils-ParseXS/lib/ExtUtils/xsubpp, (16) dist/Module-CoreList/corelist, (17) ext/Pod-Html/bin/pod2html, (18) utils/c2ph.PL, (19) utils/h2ph.PL, (20) utils/h2xs.PL, (21) utils/libnetcfg.PL, (22) utils/perlbug.PL, (23) utils/perldoc.PL, (24) utils/perlivp.PL, and (25) utils/splain.PL in Perl 5.x before 5.22.3-RC2 and 5.24 before 5.24.1-RC2 do not properly remove . (period) characters from the end of the includes directory array, which might allow local users to gain privileges via a Trojan horse module under the current working directory."
+                                }
+                            },
+                            {
+                                "BID-86707": {
+                                    "bugtraq_id": 86707,
+                                    "class": "Failure to Handle Exceptional Conditions",
+                                    "cve": [
+                                        "CVE-2015-8853"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "Perl CVE-2015-8853 Denial of Service Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-92136": {
+                                    "bugtraq_id": 92136,
+                                    "class": "Unknown",
+                                    "cve": [
+                                        "CVE-2016-1238"
+                                    ],
+                                    "local": "yes",
+                                    "remote": "no",
+                                    "title": "Perl CVE-2016-1238 Local Privilege Escalation Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-101051": {
+                                    "bugtraq_id": 101051,
+                                    "class": "Boundary Condition Error",
+                                    "cve": [
+                                        "CVE-2017-12814"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "Perl CVE-2017-12814 Stack Based Buffer Overflow Vulnerability"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": true,
+                        "product": "perl-base",
+                        "version": "5.18.2",
+                        "vulnerabilities": [
+                            {
+                                "BID-86707": {
+                                    "bugtraq_id": 86707,
+                                    "class": "Failure to Handle Exceptional Conditions",
+                                    "cve": [
+                                        "CVE-2015-8853"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "Perl CVE-2015-8853 Denial of Service Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-92136": {
+                                    "bugtraq_id": 92136,
+                                    "class": "Unknown",
+                                    "cve": [
+                                        "CVE-2016-1238"
+                                    ],
+                                    "local": "yes",
+                                    "remote": "no",
+                                    "title": "Perl CVE-2016-1238 Local Privilege Escalation Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-101051": {
+                                    "bugtraq_id": 101051,
+                                    "class": "Boundary Condition Error",
+                                    "cve": [
+                                        "CVE-2017-12814"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "Perl CVE-2017-12814 Stack Based Buffer Overflow Vulnerability"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": true,
+                        "product": "perl-modules",
+                        "version": "5.18.2",
+                        "vulnerabilities": [
+                            {
+                                "BID-86707": {
+                                    "bugtraq_id": 86707,
+                                    "class": "Failure to Handle Exceptional Conditions",
+                                    "cve": [
+                                        "CVE-2015-8853"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "Perl CVE-2015-8853 Denial of Service Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-92136": {
+                                    "bugtraq_id": 92136,
+                                    "class": "Unknown",
+                                    "cve": [
+                                        "CVE-2016-1238"
+                                    ],
+                                    "local": "yes",
+                                    "remote": "no",
+                                    "title": "Perl CVE-2016-1238 Local Privilege Escalation Vulnerability"
+                                }
+                            },
+                            {
+                                "BID-101051": {
+                                    "bugtraq_id": 101051,
+                                    "class": "Boundary Condition Error",
+                                    "cve": [
+                                        "CVE-2017-12814"
+                                    ],
+                                    "local": "no",
+                                    "remote": "yes",
+                                    "title": "Perl CVE-2017-12814 Stack Based Buffer Overflow Vulnerability"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "plymouth",
+                        "version": "0.8.8",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "procps",
+                        "version": "3.3.9",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "python3",
+                        "version": "3.4.0",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "python3-minimal",
+                        "version": "3.4.0",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "python3.4",
+                        "version": "3.4.3",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "python3.4-minimal",
+                        "version": "3.4.3",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": true,
+                        "product": "readline-common",
+                        "version": "6.3",
+                        "vulnerabilities": [
+                            {
+                                "BID-66369": {
+                                    "bugtraq_id": 66369,
+                                    "class": "Design Error",
+                                    "cve": [
+                                        "CVE-2014-2524"
+                                    ],
+                                    "local": "yes",
+                                    "remote": "no",
+                                    "title": "GNU Readline '_rl_tropen()' Insecure Temporary File Handling Vulnerability"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "resolvconf",
+                        "version": "1.69ubuntu1.1",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "rsyslog",
+                        "version": "7.4.4",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "sed",
+                        "version": "4.2.2",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "sensible-utils",
+                        "version": "0.0.9",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "sudo",
+                        "version": "1.8.9p5",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "sysv-rc",
+                        "version": "2.88dsf",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "sysvinit-utils",
+                        "version": "2.88dsf",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": true,
+                        "product": "tar",
+                        "version": "1.27.1",
+                        "vulnerabilities": [
+                            {
+                                "CVE-2016-6321": {
+                                    "cveid": "CVE-2016-6321",
+                                    "cvss_access_complexity": "LOW",
+                                    "cvss_access_vector": "NETWORK",
+                                    "cvss_authentication": "NONE",
+                                    "cvss_availability_impact": "NONE",
+                                    "cvss_base": 5.0,
+                                    "cvss_confidentiality_impact": "NONE",
+                                    "cvss_exploit": 10.0,
+                                    "cvss_impact": 2.9,
+                                    "cvss_integrity_impact": "PARTIAL",
+                                    "cvss_vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+                                    "cweid": "CWE-22",
+                                    "mod_date": "13-02-2023",
+                                    "pub_date": "09-12-2016",
+                                    "summary": "Directory traversal vulnerability in the safer_name_suffix function in GNU tar 1.14 through 1.29 might allow remote attackers to bypass an intended protection mechanism and write to arbitrary files via vectors related to improper sanitization of the file_name parameter, aka POINTYFEATHER."
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "tzdata",
+                        "version": "2016j",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "ubuntu-keyring",
+                        "version": "2012.05.19",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "ubuntu-minimal",
+                        "version": "1.325",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "ucf",
+                        "version": "3.0027+nmu1",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "udev",
+                        "version": "204",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "upstart",
+                        "version": "1.12.1",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "ureadahead",
+                        "version": "0.100.0",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "util-linux",
+                        "version": "2.20.1",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "vim-common",
+                        "version": "7.4.052",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "vim-tiny",
+                        "version": "7.4.052",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "whiptail",
+                        "version": "0.52.15",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "xkb-data",
+                        "version": "2.10.1",
+                        "vulnerabilities": []
+                    },
+                    {
+                        "is_false_positive": false,
+                        "is_vulnerable": false,
+                        "product": "zlib1g",
+                        "version": "1.2.8.dfsg",
+                        "vulnerabilities": []
+                    }
+                ],
+                "total_os_packages": 184,
+                "vuln_os_packages": 17
+            },
+            "prog_lang_dependencies": {
+                "dependencies_details": {
+                    "java": [],
+                    "js": [],
+                    "nodejs": [],
+                    "php": [],
+                    "python": [],
+                    "ruby": []
+                },
+                "vuln_dependencies": 0
+            }
+        },
+        "status": "Completed",
+        "timestamp": "2024-01-10 07:36:26.978501"
+    }
+]

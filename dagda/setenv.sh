@@ -1,0 +1,6 @@
+#!/bin/bash
+
+DAGDA_HOST=127.0.0.1  
+export DAGDA_HOST
+DAGDA_PORT=5000
+export DAGDA_PORT
