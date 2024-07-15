@@ -1,4 +1,4 @@
-#本项目基于现有dagda的改良 https://github.com/eliasgranderubio/dagda
+#本项目基于现有dagda的改良 https://github.com/eliasgranderubio/dagda 由于原有项目可以说年久失修，现在很难正常运行，这边对原代码做了修改。
 # Dagda
 [![Python](https://img.shields.io/badge/python-3.8-blue.svg)](https://github.com/eliasgranderubio/dagda)
 [![Docker Pulls](https://img.shields.io/docker/pulls/3grander/dagda.svg)](https://hub.docker.com/r/3grander/dagda/)
